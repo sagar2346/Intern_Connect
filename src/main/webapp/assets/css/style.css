@@ -8,8 +8,8 @@
 html, body {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0b0f1a;
-  color: #ffffff;
+  background-color: #DDD0C8; /* Beige */
+  color: #323232; /* Dark Grey */
 }
 
 body {
@@ -25,18 +25,18 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px 100px;
-  background-color: #0b0f1a;
-  border-bottom: 1px solid #1f2233;
+  background-color: #DDD0C8;
+  border-bottom: 1px solid #DDD0C8;
 }
 
 .logo {
   font-size: 28px;
   font-weight: 700;
-  color: #f0c929;
+  color: #323232;
 }
 
 .nav-links a {
-  color: #d0d0d0;
+  color: #323232;
   text-decoration: none;
   margin-left: 50px;
   font-size: 24px;
@@ -46,7 +46,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: #3563ff;
+  color: #ffffff;
 }
 
 .nav-links a.active::after {
@@ -54,10 +54,58 @@ body {
   position: absolute;
   width: 100%;
   height: 3px;
-  background: #3563ff;
+  background: #DDD0C8;
   bottom: -8px;
   left: 0;
   border-radius: 2px;
+}
+
+
+/* Dropdown Button */
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  
+  cursor: pointer;
+  padding: 8px 16px;
+  color: #2A2A2A;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #DDD0C8;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  min-width: 160px;
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: #2A2A2A;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #EFE6DD;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #000;
 }
 
 /* Hero Section */
@@ -67,32 +115,33 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 40px;
+  padding: 115px 90px;
   text-align: center;
+  background-color: #DDD0C8;
 }
 
 .hero h1 {
-	padding-top: 50px;
+  padding-top: 50px;
   font-size: 72px;
   font-weight: 800;
   margin-bottom: 50px;
-  color: white;
+  color: #323232;
 }
 
 .hero p {
   font-size: 28px;
-  color: #c0c0c0;
+  color: #323232;
   margin-bottom: 100px;
 }
 
 /* Search Bar */
 .search-bar {
-  background-color: #14192b;
+  background-color: #CBBBAF;
   padding: 30px 40px;
   border-radius: 20px;
   display: flex;
   gap: 25px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 60px;
@@ -102,19 +151,19 @@ body {
   padding: 22px 28px;
   border: none;
   border-radius: 10px;
-  background-color: #0e1320;
-  color: white;
+  background-color: #DDD0C8;
+  color: #323232;
   font-size: 20px;
   width: 300px;
 }
 
 .search-bar input::placeholder {
-  color: #aaa;
+  color: #999;
 }
 
 .search-bar button {
-  background-color: #3563ff;
-  color: white;
+  background-color: #DDD0C8;
+  color: #323232;
   border: none;
   padding: 22px 34px;
   border-radius: 10px;
@@ -125,7 +174,7 @@ body {
 }
 
 .search-bar button:hover {
-  background-color: #274edc;
+  background-color: #c2b3aa;
   transform: scale(1.05);
 }
 
@@ -138,12 +187,17 @@ body {
   padding: 60px 100px 40px;
   gap: 60px;
   width: 100%;
+  background-color: #CBBBAF;
 }
 
 .feature-card {
   text-align: left;
-  width: 550px;
+  width: 500px;
   transition: transform 0.3s ease;
+  background-color: #DDD0C8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .feature-card:hover {
@@ -154,22 +208,259 @@ body {
   font-size: 55px;
   font-weight: 700;
   margin-bottom: 14px;
-  color: white;
+  color: #323232;
 }
 
 .feature-card p {
   font-size: 20px;
-  color: #c0c0c0;
+  color: #4a4a4a;
   line-height: 1.7;
 }
 
 /* Footer */
 .footer {
-  background-color: #0b0f1a;
-  color: #ccc;
-     text-align: center;
-    padding: 30px;
-    font-size: 24px;
-    margin-top: auto;
-  border-top: 1px solid #1f2233;
+  background-color: #CBBBAF;
+  color: #323232;
+  text-align: center;
+  padding: 30px;
+  font-size: 24px;
+  margin-top: auto;
+  border-top: 1px solid #DDD0C8;
 }
+
+/*REGISTER PAGE*/
+
+    .register-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      padding: 100px 60px;
+    }
+
+    .register-card {
+      flex: 1;
+      background-color: #EFE6DD;
+      padding: 300px 50px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .register-card i {
+      font-size: 60px;
+      color: #2A2A2A;
+      margin-bottom: 30px;
+    }
+
+    .register-card h2 {
+      font-size: 28px;
+      color: #2A2A2A;
+      margin-bottom: 10px;
+    }
+
+    .register-card p {
+      color: #2A2A2A;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    .register-card a {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #B7AA9E;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .register-card a:hover {
+     background-color: #B7AA9E;
+  color: #2A2A2A;
+  transform: scale(1.03);
+}
+    }
+
+    .divider-vertical {
+      width: 2px;
+      height: 300px;
+      background-color: #222533;
+    }
+
+    .bottom-login-link {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      color: #2A2A2A;
+    }
+
+    .bottom-login-link a {
+      color: #2A2A2A;
+      text-decoration: none;
+    }
+
+    .bottom-login-link a:hover {
+      text-decoration: underline;
+    }
+    
+    
+    
+/*JOB SEEKER REGISTER*/
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 30px 60px;
+  background-color: #D6C8BE;
+  border-bottom: 2px solid #D6C8BE;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2A2A2A;
+}
+
+.logo span {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Container */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  background-color: #EFE6DD;
+}
+
+/* Card */
+.login-card {
+  background-color: #D6C8BE;
+  padding: 50px;
+  border-radius: 16px;
+  width: 700px;
+  box-shadow: 0 22px 30px rgba(0, 0, 0, 0.09);
+}
+
+/* Header Text */
+.login-header h1,
+.form-heading {
+  font-size: 28px;
+  color: #2A2A2A;
+}
+
+/* Intro Paragraph */
+.form-intro {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #2A2A2A;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #EFE6DD;
+  padding: 18px 22px;
+  border-radius: 10px; /* Slightly more rounded */
+  margin-bottom: 20px;
+  border: 2px solid #D6C8BE; /* Thicker border */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 3px rgba(42, 42, 42, 0.2); /* subtle focus glow */
+}
+
+.input-group i {
+  color: #2A2A2A;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 8px 0:
+  color: #2A2A2A;
+  flex: 1;
+}
+
+/* Captcha Group */
+.input-group.captcha-group {
+  justify-content: center;
+  background-color: #EFE6DD;
+}
+
+.captcha-center {
+  text-align: center;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #2A2A2A;
+  color: #EFE6DD;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2A2A2A;
+  opacity: 0.85;
+}
+
+/* Terms Text */
+.terms-text {
+  font-size: 14px;
+  color: #2A2A2A;
+  margin-top: 20px;
+}
+
+.terms-text a {
+  color: #2A2A2A;
+  text-decoration: none;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+
+/* Register Link */
+.register-link {
+  text-align: center;
+  font-size: 14px;
+  color: #2A2A2A;
+}
+
+.register-link-spacing {
+  margin-top: 25px;
+}
+
+.register-link a {
+  color: #2A2A2A;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/*JOBBBB  Application*/
+
