@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Register | Internship & Job Placement Portal</title>
+  <title>Register | InternConnect</title>
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
  
@@ -12,12 +12,12 @@
 
   <!-- Navbar -->
   <header class="navbar">
-    <div class="logo">INTERNSHIP & JOB PLACEMENT PORTAL</div>
+    <div class="logo">InternConnect</div>
     <nav class="nav-links">
       <a href="index.jsp">Home</a>
       <a href="login.jsp">Login</a>
       <a href="register.jsp" class="active">Register</a>
-      <a href="#">Job Listings</a>
+      <a href="JobListing.jsp">Job Listings</a>
     </nav>
   </header>
 

@@ -78,7 +78,7 @@
 
             <!-- Already Have Account -->
             <div class="register-link register-link-spacing">
-                Already have a jobseeker account? <a href="login.jsp">Log in</a>
+                Already have a jobseeker account? <a href="JobSeekerLogin.jsp">Log in</a>
             </div>
 
         </div>

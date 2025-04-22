@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Internship & Job Placement Portal</title>
+    <title>InternConnect</title>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -14,18 +14,27 @@
     <div class="logo">InternConnect</div>
     <nav class="nav-links">
         <a href="index.jsp" class="active">Home</a>
-        <a href="login.jsp">Login</a>
+        <a href="JobSeekerLogin.jsp">Login</a>
         <a href="register.jsp">Register</a>
-        <a href="job_listings.jsp">Job Listings</a>
+        <a href="JobListing.jsp">Job Listings</a>
 
         <!-- Zone Dropdown -->
         <div class="dropdown">
             <span class="dropbtn">Zone</span>
             <div class="dropdown-content">
-                <a href="employee_zone.jsp">Employee Zone</a>
-                <a href="admin_zone.jsp">Admin Zone</a>
+                <a href="EmployeeZoneLogin.jsp">Employee Zone</a>
+                <a href="AdminDashboard.jsp">Admin Zone</a>
             </div>
         </div>
+        <div class="dropdown">
+      <span class="dropbtn">More</span>
+      <div class="dropdown-content">
+        <a href="About_us.jsp">About Us</a>
+        <a href="contact.jsp">Contact Us</a>
+      </div>
+    </div>
+        
+            
     </nav>
 </header>
 
