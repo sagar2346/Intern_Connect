@@ -25,6 +25,7 @@
     <div class="login-card">
       <div class="login-header">
         <h1>LOGIN</h1>
+        <h1>LOGIN</h1>
         <a href="register.jsp" class="register-btn">Register</a>
       </div>
 
