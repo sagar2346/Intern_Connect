@@ -1,0 +1,115 @@
+/* === ADMIN LOGIN PAGE CSS === */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EFE6DD;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #D6C8BE;
+    padding: 20px 60px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2A2A2A;
+}
+
+.logo span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 8px;
+    color: #2A2A2A;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 20px;
+}
+
+/* Card Styling */
+.login-card {
+    background-color: #D6C8BE;
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2A2A2A;
+}
+
+.form-intro {
+    font-size: 14px;
+    color: #2A2A2A;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #EFE6DD;
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    color: #2A2A2A;
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #2A2A2A;
+    flex: 1;
+}
+
+/* Login Button */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #2A2A2A;
+    color: #EFE6DD;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    opacity: 0.85;
+}
+
+/* Additional Text */
+.terms-text {
+    font-size: 13px;
+    color: #2A2A2A;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.terms-text a {
+    color: #2A2A2A;
+    text-decoration: underline;
+}

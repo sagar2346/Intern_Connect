@@ -1,0 +1,118 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <!-- Welcome File List -->
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+  <!-- Session Configuration -->
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+
+  <!-- Error Pages -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/error.jsp</location>
+  </error-page>
+
+  <!-- Listeners -->
+  <listener>
+    <listener-class>com.internconnect.util.DatabaseInitializer</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.AdminDashboardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminDashboardServlet</servlet-name>
+    <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SampleServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.SampleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SampleServlet</servlet-name>
+    <url-pattern>/SampleServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>JobSeekerLoginServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.JobSeekerLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JobSeekerLoginServlet</servlet-name>
+    <url-pattern>/jobSeekerLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AdminRegisterServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.AdminRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminRegisterServlet</servlet-name>
+    <url-pattern>/AdminRegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EmployerRegisterServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.EmployerRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployerRegisterServlet</servlet-name>
+    <url-pattern>/EmployerRegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>EmployerLoginServlet</servlet-name>
+    <servlet-class>com.internconnect.servlet.EmployerLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployerLoginServlet</servlet-name>
+    <url-pattern>/EmployerLoginServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>
