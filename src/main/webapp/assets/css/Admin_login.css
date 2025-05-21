@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #EFE6DD;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    background-color: #DDD0C8;
+    border-bottom: 1px solid #DDD0C8;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #323232;
+}
+
+.nav-links a {
+    color: #323232;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #DDD0C8;
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+}
+/* Navbar */
+.employer-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D6C8BE;
+    padding: 25px 60px;
+    border-bottom: 2px solid #CBBBAF;
+}
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2A2A2A;
+}
+
+.zone-label {
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+/* Layout */
+.employer-login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px;
+    gap: 70px;
+    flex-direction: row-reverse;  /* <-- Flip the layout */
+}
+
+/* Left text */
+.employer-info {
+    flex: 1;
+    text-align: right;
+    max-width:900px;
+}
+
+.employer-info h1 {
+    font-size: 80px;
+    color: #2A2A2A;
+    margin-bottom: 15px;
+}
+
+.employer-info p {
+    font-size: 25px;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Right form */
+.login-box {
+    flex: 0 0 500px;
+    background-color: #D6C8BE;
+    padding: 60px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    color: #2A2A2A;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.input-icon-group {
+    display: flex;
+    align-items: center;
+    background-color: #EFE6DD;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #CBBBAF;
+    margin-bottom: 20px;
+}
+
+.input-icon-group i {
+    margin-right: 12px;
+    color: #888;
+}
+
+.input-icon-group input {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    flex: 1;
+    outline: none;
+    color: #2A2A2A;
+}
+
+/* Extras */
+.extra-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.extra-options a {
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.extra-options a:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.login-btn {
+    background-color: #2A2A2A;
+    color: #EFE6DD;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #444;
+}
+
+/* Bottom link */
+.register-text {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+.register-text a {
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}

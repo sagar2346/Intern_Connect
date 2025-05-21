@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <!-- JobSeekerRegisterServlet Mapping -->
+  <servlet>
+    <servlet-name>JobSeekerRegisterServlet</servlet-name>
+    <servlet-class>controller.JobSeekerRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JobSeekerRegisterServlet</servlet-name>
+    <url-pattern>/JobSeekerRegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>JobSeekerLoginServlet</servlet-name>
+    <servlet-class>controller.JobSeekerLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>JobSeekerLoginServlet</servlet-name>
+    <url-pattern>/JobSeekerLoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add AdminRegisterServlet mapping -->
+  <servlet>
+    <servlet-name>AdminRegisterServlet</servlet-name>
+    <servlet-class>controller.AdminRegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminRegisterServlet</servlet-name>
+    <url-pattern>/AdminRegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add AdminLoginServlet mapping -->
+  <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>controller.AdminLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add PostJobServlet mapping -->
+  <servlet>
+    <servlet-name>PostJobServlet</servlet-name>
+    <servlet-class>controller.PostJobServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>PostJobServlet</servlet-name>
+    <url-pattern>/PostJobServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add ApproveJobServlet mapping -->
+  <servlet>
+    <servlet-name>ApproveJobServlet</servlet-name>
+    <servlet-class>controller.ApproveJobServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ApproveJobServlet</servlet-name>
+    <url-pattern>/ApproveJobServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add RejectJobServlet mapping -->
+  <servlet>
+    <servlet-name>RejectJobServlet</servlet-name>
+    <servlet-class>controller.RejectJobServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RejectJobServlet</servlet-name>
+    <url-pattern>/RejectJobServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add TestJobApprovalServlet mapping -->
+  <servlet>
+    <servlet-name>TestJobApprovalServlet</servlet-name>
+    <servlet-class>controller.TestJobApprovalServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TestJobApprovalServlet</servlet-name>
+    <url-pattern>/TestJobApprovalServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add DebugDatabaseServlet mapping -->
+  <servlet>
+    <servlet-name>DebugDatabaseServlet</servlet-name>
+    <servlet-class>controller.DebugDatabaseServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DebugDatabaseServlet</servlet-name>
+    <url-pattern>/DebugDatabaseServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add UpdateJobServlet mapping -->
+  <servlet>
+    <servlet-name>UpdateJobServlet</servlet-name>
+    <servlet-class>controller.UpdateJobServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateJobServlet</servlet-name>
+    <url-pattern>/UpdateJobServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add ApproveApplicationServlet mapping -->
+  <servlet>
+    <servlet-name>ApproveApplicationServlet</servlet-name>
+    <servlet-class>controller.ApproveApplicationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ApproveApplicationServlet</servlet-name>
+    <url-pattern>/ApproveApplicationServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add RejectApplicationServlet mapping -->
+  <servlet>
+    <servlet-name>RejectApplicationServlet</servlet-name>
+    <servlet-class>controller.RejectApplicationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RejectApplicationServlet</servlet-name>
+    <url-pattern>/RejectApplicationServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add AdminViewApplicationsServlet mapping -->
+  <servlet>
+    <servlet-name>AdminViewApplicationsServlet</servlet-name>
+    <servlet-class>controller.AdminViewApplicationsServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdminViewApplicationsServlet</servlet-name>
+    <url-pattern>/AdminViewApplicationsServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add JobApplicationServlet mapping -->
+  <servlet>
+    <servlet-name>JobApplicationServlet</servlet-name>
+    <servlet-class>controller.JobApplicationServlet</servlet-class>
+    <multipart-config>
+      <file-size-threshold>1048576</file-size-threshold>
+      <max-file-size>10485760</max-file-size>
+      <max-request-size>52428800</max-request-size>
+    </multipart-config>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>JobApplicationServlet</servlet-name>
+    <url-pattern>/JobApplicationServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add UpdateProfileServlet mapping -->
+  <servlet>
+    <servlet-name>UpdateProfileServlet</servlet-name>
+    <servlet-class>controller.UpdateProfileServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateProfileServlet</servlet-name>
+    <url-pattern>/UpdateProfileServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add EmployerLoginServlet mapping -->
+  <!-- Add ContactServlet mapping -->
+  <servlet>
+    <servlet-name>ContactServlet</servlet-name>
+    <servlet-class>controller.ContactServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ContactServlet</servlet-name>
+    <url-pattern>/ContactServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add MarkContactReadServlet mapping -->
+  <servlet>
+    <servlet-name>MarkContactReadServlet</servlet-name>
+    <servlet-class>controller.MarkContactReadServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MarkContactReadServlet</servlet-name>
+    <url-pattern>/MarkContactReadServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add DeleteApplicationServlet mapping -->
+  <servlet>
+    <servlet-name>DeleteApplicationServlet</servlet-name>
+    <servlet-class>controller.DeleteApplicationServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteApplicationServlet</servlet-name>
+    <url-pattern>/DeleteApplicationServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add SearchServlet mapping -->
+  <servlet>
+    <servlet-name>SearchServlet</servlet-name>
+    <servlet-class>controller.SearchServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SearchServlet</servlet-name>
+    <url-pattern>/SearchServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Add LogoutServlet mapping -->
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controller.LogoutServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Register the Authentication Filter -->
+  <filter>
+    <filter-name>AuthenticationFilter</filter-name>
+    <filter-class>filter.AuthenticationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthenticationFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+  <!-- Set session timeout -->
+  <session-config>
+    <session-timeout>30</session-timeout> <!-- in minutes -->
+  </session-config>
+</web-app>
