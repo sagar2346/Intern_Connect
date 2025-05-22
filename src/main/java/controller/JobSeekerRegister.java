@@ -17,7 +17,6 @@ public class JobSeekerRegister extends HttpServlet {
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "your_password_here";
 
-
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 

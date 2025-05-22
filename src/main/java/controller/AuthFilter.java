@@ -19,7 +19,6 @@ public class AuthFilter implements Filter {
     public void init(FilterConfig filterConfig) throws ServletException {
         // Optional: log or config load
     }
-
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
 
