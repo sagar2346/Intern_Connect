@@ -17,7 +17,6 @@
         <a href="job_listings.jsp" class="active">Job Listings</a>
     </div>
 </nav>
-
 <!-- 💼 Hero Section -->
 <section class="hero">
     <div class="hero-text">

@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
+<!-- Nav Bar -->
 <html>
 <head>
     <title>Admin Dashboard | InternConnect</title>

@@ -17,7 +17,6 @@
         <a href="JobSeekerLogin.jsp">Login</a>
         <a href="register.jsp">Register</a>
         <a href="JobListing.jsp">Job Listings</a>
-
         <!-- Zone Dropdown -->
         <div class="dropdown">
             <span class="dropbtn">Zone</span>

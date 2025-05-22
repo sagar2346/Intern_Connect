@@ -18,7 +18,6 @@
         <a href="contact.jsp" class="active">Contact Us</a>
     </div>
 </nav>
-
 <!-- 💬 Contact Section with Image -->
 <div class="contact-wrapper">
     <form class="contact-card">

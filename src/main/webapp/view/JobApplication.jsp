@@ -14,7 +14,6 @@
         <nav class="nav-links">
          <a href="index.jsp" class="active">Home</a>
         </nav>
-    
 </div>
 
 <div class="form-container">

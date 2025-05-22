@@ -18,7 +18,6 @@
         <a href="contact.jsp">Contact Us</a>
     </div>
 </nav>
-
 <!-- ✅ Our Team Section -->
 <section class="team-section">
     <h1>Our Team</h1>

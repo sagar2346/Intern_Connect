@@ -21,7 +21,6 @@
     </div>
 </div>
 
-
 <!-- MAIN CONTAINER -->
 <div class="employer-login-wrapper">
     <!-- LEFT: Info -->
