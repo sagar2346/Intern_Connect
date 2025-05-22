@@ -11,6 +11,7 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+
 REM Initialize Git repository if not already initialized
 if not exist ".git" (
     echo Initializing Git repository...
